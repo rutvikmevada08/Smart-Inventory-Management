@@ -136,6 +136,7 @@ router.get('/employees', employees.list);
 router.post('/employees', adminOnly, employees.create);
 router.get('/employees/:id', employees.get);
 router.put('/employees/:id', adminOnly, employees.update);
+router.patch('/employees/:id/deactivate', adminOnly, employees.deactivate);
 router.delete('/employees/:id', adminOnly, employees.deactivate);
 router.post('/employees/:id/reactivate', adminOnly, employees.reactivate);
 router.get('/employees/:id/financial-summary', employees.financialSummary);
